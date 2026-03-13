@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 -1 -7" rotation="0 0 0" color="#CDC8C2" scale="15.5 1 33"></a-box> // floor
+
+       // Wall 1 group
+      <a-box position="-9 2 -16.5" rotation="0 0 0" color="#CDC8C2" scale="1 7 14"></a-box> // Wall Corner Right
+      <a-box position="-9 2 8" rotation="0 0 0" color="#CDC8C2" scale="1 7 5"></a-box> // Wall Corner Left
+      <a-box position="-9 0 3" color="#CDC8C2" scale="1 2 6"></a-box> // Window 1 bottom frame
+      <a-box position="-9 2 3" color="#7BC8A4" opacity="0.5" scale="0.5 3 5"></a-box> // Window 1
+      <a-box position="-9 4.5 3" color="#CDC8C2" scale="1 2 6"></a-box> // Window 1 top frame
+      <a-box position="-9 2 -2" color="#CDC8C2" scale="1 7 5"></a-box> // Middle pillar
+      <a-box position="-9 0 -7" color="#CDC8C2" scale="1 2 6"></a-box> // Window 2 bottom frame
+      <a-box position="-9 2 -7" color="#7BC8A4" opacity="0.5" scale="0.5 3 5"></a-box> // Window 2
+      <a-box position="-9 4.5 -7" color="#CDC8C2" scale="1 2 6"></a-box> // Window 2 top frame
+
+
+      // Wall 2 group
+      <a-box position="7 2 -23.5" color="#CDC8C2" scale="1 7 1"></a-box> // left end panel
+      <!-- first window -->
+      <a-box position="7 0 -17" color="#CDC8C2" scale="1 2 6"></a-box> <!-- bottom frame -->
+      <a-box position="7 2 -17" color="#7BC8A4" opacity="0.5" scale="0.5 3 5"></a-box> <!-- glass -->
+      <a-box position="7 4.5 -17" color="#CDC8C2" scale="1 2 6"></a-box> <!-- top frame -->
+      <a-box position="7 2 -21.5" color="#CDC8C2" scale="1 7 4"></a-box> <!-- left pillar -->
+      <a-box position="7 2 -12" color="#CDC8C2" scale="1 7 5"></a-box> <!-- right pillar -->
+      <!-- second window -->
+      <a-box position="7 0 -7" color="#CDC8C2" scale="1 2 6"></a-box>
+      <a-box position="7 2 -7" color="#7BC8A4" opacity="0.5" scale="0.5 3 5"></a-box>
+      <a-box position="7 4.5 -7" color="#CDC8C2" scale="1 2 6"></a-box>
+      <a-box position="7 2 -2" color="#CDC8C2" scale="1 7 5"></a-box>
+      <!-- third window -->
+      <a-box position="7 0 3" color="#CDC8C2" scale="1 2 6"></a-box>
+      <a-box position="7 2 3" color="#7BC8A4" opacity="0.5" scale="0.5 3 5"></a-box>
+      <a-box position="7 4.5 3" color="#CDC8C2" scale="1 2 6"></a-box>
+      <a-box position="7 2 7.5" color="#CDC8C2" scale="1 7 4"></a-box>
+
+      <a-box position="7 2 9.5" color="#CDC8C2" scale="1 7 1"></a-box> // right end panel
+
+      // Wall 3 group
+      <a-box position="-1 2 -23.5" rotation="0 0 0" color="#CDC8C2" scale="17 7 1"></a-box>
+      <a-box position="0.5 2 -23" scale="5.5 2.5 0.5"></a-box> // white board
+      <!-- brown table in front of white board -->
+      <a-box position="4 0.5 -19.5" color="#8B4513" scale="3.5 0.5 1"></a-box> <!-- tabletop -->
+      <a-box position="2.5 0 -19.5" color="#8B4513" scale="0.2 1 0.2"></a-box> <!-- left leg -->
+      <a-box position="5.5 0 -19.5" color="#8B4513" scale="0.2 1 0.2"></a-box> <!-- right leg -->
+
+      // Wall 4 group
+      <a-box position="-1 2 10" color="#CDC8C2" scale="4 7 1"></a-box> // Middle wall
+      <a-box position="-5 0 10" color="#CDC8C2" scale="4 2 1"></a-box> // Left short Down
+      <a-box position="-5 2 10" color="#7BC8A4" opacity="0.5" scale="4 3 0.5"></a-box> // glass 2
+      <a-box position="-5 4.5 10" color="#CDC8C2" scale="4 2 1"></a-box> // Left short Up
+      <a-box position="-8 2 10" color="#CDC8C2" scale="3 7 1"></a-box> // Left wall
+      <a-box position="3 0 10" color="#CDC8C2" scale="4 2 1"></a-box> // right short Down 
+      <a-box position="3 2.5 10" color="#7BC8A4" opacity="0.5" scale="4 3 0.5"></a-box> // glass 1
+      <a-box position="3 4.5 10" color="#CDC8C2" scale="4 2 1"></a-box> // right short Up  
+      <a-box position="6 2 10" color="#CDC8C2" scale="3 7 1"></a-box> // right wall
+
+      //Wall 3 group
+      <a-box position="-8.5 2 -19" color="#CDC8C2" scale="1 7 8.5"></a-box> // Left wall
+      <a-box position="-6 4.5 -15" color ="#CDC8C2" scale="4 1 0.5"></a-box> // Top wall
+      <a-box position="-4 2 -19" color="#CDC8C2" scale="0.5 7 8.5"></a-box> // Right wall
+
+      <a-box position="-1 5 -7" rotation="0 0 0" color="#CDC8C2" scale="15.5 1 33"></a-box> // ceiling
+      
+      // Floor & Furniture
+      <a-plane position="-1 -0.6 -3" rotation="-90 0 0" width="60" height="60" color="#7BC8A4"></a-plane>
+      <!-- Brown Tables, Line 1 -->
+      <a-box position="2.5 0.5 -8" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 1 
+      <a-box position="1  0 -8" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="4 0 -8" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="2.5 0.5 -4" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 2
+      <a-box position="1  0 -4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="4 0 -4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="2.5 0.5 0" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 3
+      <a-box position="1  0 0" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="4 0 0" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="2.5 0.5 4" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 2
+      <a-box position="1  0 4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="4 0 4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+
+      <!-- Brown Tables, Line 2-->
+      <a-box position="-5.5 0.5 -8" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 1 
+      <a-box position="-7  0 -8" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-4 0 -8" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-5.5 0.5 -4" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 2
+      <a-box position="-7  0 -4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-4 0 -4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-5.5 0.5 0" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 3
+      <a-box position="-7  0 0" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-4 0 0" color="#8B4513" scale="0.2 1 0.2"></a-box>
+      <a-box position="-5.5 0.5 4" color="#8B4513" scale="3.5 0.5 1"></a-box> Table 2
+      <a-box position="-7  0 4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+      <a-box position="-4 0 4" color="#8B4513" scale="0.2 1 0.2"></a-box> 
+
+
+      <a-sky color="#E3F2FD"></a-sky>
+    </a-scene>
+  </body>
+</html>
